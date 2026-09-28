@@ -1,0 +1,15 @@
+@media print {
+	.site-header,
+	.mobile-nav,
+	.mobile-nav-overlay,
+	.floating-contact,
+	.st-cookie-consent,
+	.site-footer__links { display: none !important; }
+
+	body { background: #fff; color: #000; font-size: 12pt; }
+	.site-main { padding-top: 0; }
+
+	a[href]::after { content: ' (' attr(href) ')'; font-size: 0.8em; }
+	a[href^="tel:"]::after,
+	a[href^="javascript:"]::after { content: ''; }
+}

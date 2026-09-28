@@ -1,0 +1,22 @@
+[dir="rtl"] body,
+body {
+	direction: rtl;
+	text-align: right;
+}
+
+[dir="rtl"] .floating-contact {
+	inset-inline-start: 1.5rem;
+	inset-inline-end: auto;
+}
+
+[dir="rtl"] .st-form__checkbox {
+	flex-direction: row;
+}
+
+[dir="rtl"] .card__link::after {
+	content: ' ←';
+}
+
+[dir="ltr"] .card__link::after {
+	content: ' →';
+}
